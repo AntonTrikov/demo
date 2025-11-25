@@ -75,4 +75,4 @@ jobs:
       # --- UPDATE DEPLOYMENT IN GKE ----------------------
       - name: Update Deployment image
         run: |
-          kubectl set image deployment/demo-deployment demo=atrikov96/demo:${{ github.ref_name }}-${{ github.sha }}
+          kubectl set image deployment/demo-deployment demo-1=atrikov96/demo:${{ github.ref_name }}-${{ github.sha }}
