@@ -60,7 +60,7 @@ jobs:
         uses: google-github-actions/setup-gcloud@v2
 
       - name: Get GKE credentials
-        run: gcloud container clusters get-credentials demo-cluster --zone us-central1 --project protean-beaker-479015-a3
+        run: gcloud container clusters get-credentials autopilot-cluster-1 --zone us-central1 --project protean-beaker-479015-a3
 
       # --- UPDATE DEPLOYMENT IN GKE ----------------------
       - name: Update Deployment image
